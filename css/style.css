@@ -1,0 +1,814 @@
+@font-face{
+    font-family: my-font;
+    src:url('Krifon Regular.otf')
+}
+@font-face{
+    font-family: my-paragraph;
+    src: url('Saudagar.ttf');
+}
+@font-face{
+    font-family: mine;
+    src:url('HistadiaPersonalUse-Regular.otf')
+}
+@font-face{
+    font-family: robo;
+    src:url('Merriweather-Light.ttf')
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: transform 1s;
+   
+}
+#dots3{
+    width:2em;
+    height: 2em;
+    position: fixed;
+    z-index: 3;
+    margin-top: .7em;
+    margin-left: .7em;
+    display:none;
+    background: transparent;
+}
+header{
+    width:100%;
+    position: static;
+   background-image: url('one.jpg');
+   background-position: center;
+   background-size: cover;
+   text-align: end;
+   display: flex;
+   flex-flow: row;
+    align-items: end;
+    justify-content: end;
+    padding: 1em;
+    height: 5vw;
+
+}
+header div{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+   align-items: flex-end;
+   justify-content: end;
+   padding-right: 1em;
+   gap:3em;
+   height: 100%;
+   float: right;
+}
+header div a{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: my-font;
+color:white;}
+header div a:hover{
+    color:green;
+}
+/*go to the home part*/
+.container{
+    background-color: rgb(159, 159, 159);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+.Home{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 2em;
+    gap:3%;
+}
+.Home img{
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    border: rgb(154, 149, 149) 1px solid;
+    box-shadow:2px 5px 4px 1px;
+    animation: myAnimation 5s 1;
+    
+}
+@keyframes myAnimation{
+    0%{
+        transform: translateX(0px);
+
+    }  
+    15%{
+        transform:translateX(-300px) rotate(-360deg);
+    } 
+    30%{
+        transform: translateX(0px);
+    }
+    45%{
+        transform: translateX(300px) rotate(360deg);
+    }
+    60%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.Home p{
+    font-size: 2em;
+    margin-top: 2%;
+    color:rgb(12, 51, 3);
+}
+.Home h6{
+    font-size: 1.5em;
+    color: rgb(1, 79, 79);
+    margin-bottom: 0;
+
+}
+.Home #bold{
+    font-size:4em;
+    margin-top: 2%;
+    color:white;
+    margin-bottom: 1vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: my-font;
+    animation: an;
+    animation-duration: 5s;
+    animation-iteration-count:1;
+    z-index: 1;
+}
+@keyframes an{
+   from{
+  transform:translateY(-300px);
+   }
+   to{
+       transform:translateY(0px);
+   }
+}
+
+/*go to the theme part*/
+
+.themes{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap:4%;
+    padding: 1%;
+    height: auto;
+}
+.themes section{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    animation:one 1s linear infinite;
+}
+.themes #white{
+    background: white;
+    border: 1px solid black;
+
+}
+.themes #black{
+    background: black;
+    border: 1px solid white;
+}
+.themes #gray{
+    background: gray;
+    border: 1px solid white;
+
+}
+/*now we proceed to the about*/
+.About{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    font-size: 1.5em;
+    flex-flow: column;
+    text-align: center;
+    color: rgb(0, 0, 0);
+   /* font-family: my-paragraph;*/
+      font-weight: 200;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 1.5vw;
+}
+.About p{
+   width:95%;
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.999);
+   padding: 1em;
+   margin-top: 0;
+   width:95%;
+   background-color: cadetblue;
+   color: black;
+   font-weight: 100;
+   border-radius: .7em;
+   color:rgb(0, 0, 0);
+   text-shadow: 2px 2px px ;
+
+}
+.About #about{
+    font-size: 3em;
+    color:white;
+    box-shadow:5px 5px 10px;
+    margin-bottom: 0em;   
+    border:none;
+    box-shadow: none;
+    margin-top: 0;
+    padding: 0;
+    background-color:transparent;
+    border-radius: 2vw;
+    font-family: my-font;
+
+}
+
+/*now we proceed to the biography*/
+.Biography{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    gap:1em;
+  
+
+}
+.Biography table {
+   font-size: 1.5em;
+   background-color: cadetblue;
+   border-radius: 1em;
+   padding: 1em;
+   box-shadow:4px 5px 4px 3px;
+
+
+}
+.Biography #biography{
+    font-size: 3em;
+    color:white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1em;
+    font-family: my-font;
+    margin-top: 1em;;
+
+}
+.Biography table tr td img{
+    width:1.3em;
+    margin-right: .6em;
+   
+}
+.Biography table tr td{
+    padding-bottom: 1em;
+}
+.Biography table tr :nth-child(2){
+    padding-left: 1em;
+    font-size: 1.2em;
+    color:black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.Biography table tr :nth-child(1){
+    font-size: 1.1em;
+    color:rgb(21, 46, 47)
+}
+#education{
+    height:100%;
+    font-size: 3em;
+    margin: 3%;
+    margin-bottom: 1%;
+    color:white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-bottom: 2%;
+    font-family: my-font;
+
+}
+#education img{
+    width:.8em;
+    margin-right: .1em;
+
+}
+.value{
+    border:1px solid cadetblue;
+    padding: 2em;
+    text-align: center;
+    box-shadow:4px 5px 4px 3px;
+    margin-bottom: 2%;
+    border-radius: 1em;
+    height: auto;
+    width:60vw;
+    background-color: cadetblue;
+}
+.value p{
+    font-size: 1.4em;
+
+}
+.value h2{
+     margin-bottom:.5em;
+     color: rgb(1, 79, 79);
+     font-size: 1.5em;
+     margin-top: 0;
+     padding: 0;
+
+}
+.value .date img{
+    width:1em;
+    height: 1em;
+    margin-left: .5em;
+    margin-right: .5em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.value .date{
+    font-size: 1em;
+    color:rgb(74, 72, 72);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+#inform{
+    text-align: center;
+      color:rgb(1, 79, 79);
+      font-size: 1.5em;
+      width:50%;
+      margin-bottom: 2%;
+}
+.table{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    box-shadow:4px 5px 4px 3px;
+    background-color: cadetblue;
+    padding: 1em;
+    height: auto;
+    border-radius: 1em;
+  
+}
+.table table tr td img{
+    height: 4em;
+    width: 4em;
+    margin-right: 3em;
+}
+.table table tr td{
+    padding-bottom: .5em;
+}
+.table table tr td .outer, .outer1, .outer2, .outer3{
+   border: 1px solid black;
+   border-radius: 1em;
+   width:120%;
+   height:1.5em;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+.table table tr td .outer .inner{
+        height: 100%;
+        text-align: center;
+        width:0%;
+        border-radius: 1em;
+        background-color:yellow;
+}
+.table table tr td .outer1 .inner1{
+    height: 100%;
+    text-align: center;
+    padding: 0;
+    width:95%;
+   border-radius: 1em;
+   background-color: orangered;
+}
+.table table tr td .outer2 .inner2{
+    height: 100%;
+    text-align: center;
+    padding: 0;
+    width:90%;
+    border-radius: 1em;
+    background-color: rgb(1, 80, 112);
+}
+#p1{
+   color: rgb(1, 80, 112);
+}
+.table table tr td .outer3 .inner3{
+    height: 100%;
+    text-align: center;
+    padding: 0;
+    width:25%;
+    border-radius: 1em;
+    background-color: rgb(2, 93, 13);
+}
+.table table tr p{
+    color:white;
+    font-family: monospace;
+    font-size: 1.3em;
+    height: 100%;
+    
+}
+.table table tr :nth-child(2){
+    
+    font-size: 1.5em;
+    color:rgb(12, 51, 3);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+/*now we go the project part*/
+.Project{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.Project #latest{
+    font-size: 2.5em;
+    color:white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 1em;
+    text-align: center;
+    font-family: my-font;
+
+
+}
+.Project .show{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap:1em;
+    padding: 1%;
+}
+.Project .show .box{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    border: solid 2px rgba(141, 139, 139, 0.5);
+    box-shadow:4px 5px 4px 3px;
+    padding-top: .0vw;
+    margin-bottom: 5%;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.Project .show .box img{
+    height: 35em;
+    width:35em;
+    box-shadow: 1px 3px 2px rgba(65, 97, 0, 0.5);
+}
+.Project .show .box p{
+    width:90%;
+    margin-top: 2%;
+    text-align: center;
+    font-size: 1.3em;
+    color: rgb(1, 79, 79);
+    margin-bottom: 3vw;
+}
+.Project .show .box p b{
+    color:red;
+}
+.Contact{
+    width:100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+.Contact h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(6, 164, 200);
+    margin-bottom: 1vw;
+    font-size: 2em;
+}
+.Contact p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(59, 62, 58);
+    margin-bottom: 1vw;
+    font-size: larger;
+    font-size: 1.2em;
+}
+.Contact #photo{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    box-shadow:4px 1px 4px 4px rgba(0, 0, 0, 0.9) ;
+    margin-bottom: 2vw;
+    animation:annn 5s infinite;
+
+}
+@keyframes annn{
+    0%{
+        transform:skewX(3deg);
+    }
+    50%{
+        transform:skewX(-3deg);
+    }
+    100%{
+        transform:skewX(3deg);
+    }
+}
+.Contact .social a img{
+    width:1.9em;
+    height:1.9em;
+    margin-right: 1em;
+    margin-top: 1em;
+    border-radius: 50%;
+}
+.Contact .social a img:hover{
+   background-color:green;
+   transform: scale(1.2);
+   border-radius: 50%;
+}
+.sticky{
+    height: 3em;
+    width: 3em;
+    border-radius: 40%;
+    bottom: 1em;
+    background-color: rgb(23, 95, 210);
+    box-shadow:4px 5px 4px 3px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float:right;
+    margin-right: -85vw;
+    position: fixed;
+    margin-bottom: 2vw;
+    animation-name: one;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes one{
+    0%{
+        transform: scale(.85);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.85);
+
+    }
+}
+.sticky img{
+    width: 1.5em;
+    height: 1.5em;
+}
+.hidden{
+transform: translateX(50vw);
+transition: transform 1s;    
+      }
+.hidden1 {
+transform: translateX(-50vw);
+transition: transform 1s; 
+}     
+
+.show{
+    transform: translateX(0);
+    transition: transform 1s;
+
+}
+footer{
+    width: 100%;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width:850px){
+    header div a{
+        text-decoration: none;
+        font-size: 1.4em;   
+    }
+    header div {
+        gap:2em;
+    }
+    .Home #bold{
+        font-size:3em;
+        margin-top: 2%;
+    } 
+    .table table tr td img{
+        height: 3em;
+        width: 3em;
+    }
+    header div{
+        width:max-content;
+      }
+    
+}
+@media screen and (max-width:750px){
+    header div {
+        gap:1.5em;
+        padding-top: 1em;
+        margin-bottom: -.8em;
+    }  
+    header div{
+        width:max-content;
+      }
+   
+    
+}
+@media screen and (max-width:650px){
+    header div {
+        gap:1.1em;
+     
+    } 
+    header div{
+        width:max-content;
+      }
+    header div a{
+        font-size: 1em;
+    } 
+    .Biography table {
+        font-size: 1.5em;
+       
+     }
+     .Biography table tr td img{
+        width:1.1em;
+        margin-right: .5em;
+       
+    }
+    .Biography table tr :nth-child(2){
+        padding-left: 1em;
+        font-size: 4vw;
+        
+    }
+    .Biography table tr :nth-child(1){
+        font-size: 4vw;
+ 
+    }
+   
+     }
+@media screen and (max-width:610px){ 
+    header div{
+        width:max-content;
+      } 
+      #dots3{
+        display:block;
+      }
+        header{
+            width:max-content;
+                background-color: rgba(0,0,0,0.5);
+            background-image: none;
+            text-align: center;
+            display: flex;
+            flex-flow: column;
+                align-items: start;
+                justify-content: center;
+                padding: 1em;
+                padding-top:0em;
+                height: 30vh;
+                position:fixed;
+                z-index: 2;
+                margin-top: 3em;
+            transition: 3s;
+            display: none;
+            height: max-content;
+        
+        }
+        header div{
+            display: flex;
+            flex-flow: column;
+            width: 100%;
+            align-items: start;
+            justify-content: center;
+           gap:.5em;
+           height: 100%;
+           float: left;
+           font-size: 1.4em;
+        }     
+        .Project .show .box{   
+            width: 90%;
+            height: 80%;
+            overflow: hidden;
+        }       
+        .Project .show .box img{
+            height: 80%; 
+            width:100%;
+            box-shadow: 1px 3px 2px rgba(65, 97, 0, 0.5);
+        }
+        .table{
+            width: 90%;
+        }
+        .table table tr td img{
+            height: 2.5em;
+            width: 2.5em;
+            margin-right: 0em;
+        }
+        .table table tr td{
+            padding-bottom: .5em;
+        }
+        .table table tr td .outer, .outer1, .outer2, .outer3{
+           border-radius: 1em;
+           width:75vw;
+           height:1.5em;
+        }
+        .value{
+            width:85%;
+        }
+    }
+@media screen and (max-width:480px){ 
+    .About{
+        font-size: 1.1em; 
+    } 
+    .Home #bold{
+        font-size:2.3em;
+    } 
+    #education{
+        font-size: 2.5em;
+    }
+    .Project #latest{
+        font-size: 2.2em;
+    }
+    header div{
+        width:max-content;
+      }
+    header{
+        height:35vh;
+    }
+    .Home img{
+        width: 50vw;
+        height: 50vw;
+        border-radius: 50%;
+        border: rgb(154, 149, 149) 1px solid;
+        box-shadow:2px 5px 4px 1px;
+    
+    }
+    .About #about{
+        font-size: 2.5em;
+    }
+    #education{
+        font-size: 2.4em;
+    }
+    .Biography #biography{
+        font-size: 2.5em;
+    }
+    #inform{
+        text-align: center;
+          color:rgb(1, 79, 79);
+          font-size: 1.5em;
+          width:80%;
+          margin-bottom: 1em;
+    }
+    .Contact #photo{
+        width: 40vw;
+        height: 40vw;
+        border-radius: 50%;
+        box-shadow:4px 1px 4px 4px rgba(0, 0, 0, 0.9) ;
+        margin-bottom: 2vw;
+    
+    }
+    .sticky{
+        float:right;
+        margin-right: -80vw;  
+        margin-bottom: 2vw;
+    }
+    .sticky img{
+        width: 4vw;
+        height: 4vw;
+    }
+    .themes section{
+        width:8vw;
+        height: 8vw;
+        
+    }
+    
+    
+
+}
+@media screen and (max-width:380px){ 
+  header div{
+    width:max-content;
+  }
+}
+@media screen and (max-width:280px){ 
+    header div{
+        width:max-content;
+      }
+
+
+
+
+}
+
+
+     
+   
+    
+
+
+

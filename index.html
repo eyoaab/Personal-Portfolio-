@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <script src="js/script.js" defer></script> 
+   <img src="img/3lines.jpg" alt="" id="dots3" onclick=change()>
+<header>
+    <div> 
+        <section><a href="#home">Home</a></section>
+        <section><a href="#about">About</a></section>
+        <section><a href="#latest">Projects</a></section>
+        <section><a href="#biography">Biography</a></section>
+        <section><a href="#contact">Contact</a></section>
+    </div>
+</header>
+
+<div class="container" id="container">
+    <div class="Home" id="home" >
+        <p id="bold" class="text">Hi I'm Eyob Tariku</p>
+        <img src="img/photo_2023-06-09_15-50-05.jpg" alt="">
+        <p>This is me</p>
+        <div class="themes">
+            <section id="white" onclick=whitee() onfocus=white()></section>
+            <section id="black" onclick=black()></section>
+            <section id="gray" onclick=gray()></section>
+        </div>
+        <h6>Choose your Theme</h6>
+    </div>
+
+    <div class="About"  >
+      <p id="about" class="text ">About</p>
+      <p >My name is Eyob Tariku, and I am currently pursuing a degree in Software Engineering at Adama Science and Technology University (ASTU). As a passionate student, 
+            I thoroughly enjoy the art of coding and problem-solving. I am particularly drawn to competitive programming,
+            where I continuously challenge myself to enhance my skills.
+            I have a strong inclination towards learning new technologies and expanding my knowledge base.
+            I actively explore various high-level programming languages and frameworks, aiming to gain a comprehensive understanding of their functionalities.
+            Additionally, I am dedicated to unraveling complex algorithms, as they play a crucial role in solving intricate competitive programming problems. In my leisure time,
+            I find solace in immersing myself in the world of fictional books.  
+            Overall, I am driven by a desire to invest my time in continuous learning and problem-solving, as it enables me to constantly improve my knowledge and skills in the field of software engineering.
+        </p>
+
+    </div>
+
+
+    <div class="Biography" >
+       <p id="biography" class="text"> Biography</p>
+        <table class="hidden animated">
+                <tr>
+                    <td><img src="img/mike.png" alt="">Name:</td>
+                    <td>Eyob Tariku</td>    
+                </tr> 
+                <tr>
+                    <td><img src="img/email.png" alt="">Email:</td>
+                    <td>Eyobtariku48@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><img src="img/ethiopia.gif" alt="">Country:</td>
+                <td>Ethiopia</td>
+                </tr>
+                <tr>
+                    <td><img src="img/city.jpg" alt="">City:</td>
+                    <td>Adama Ethiopia</td> 
+                </tr>
+                <tr>
+                    <td><img src="img/age.png" alt="">Age:</td>
+                    <td id="age">21</td>
+                </tr>
+                <tr>
+                    <td><img src="img/religion.png" alt="">Relegion:</td>
+                    <td>Orthodox</td>
+                </tr>
+
+            
+        </table>
+      <section id="education" class="text"> <img src="img/cup.png" alt="">Education</section>
+        <section class="value hidden1 animated">
+                    <div class="date"><img src="img/calendarr.png" alt="">2006-2009</div><br>
+                    <h2>Elementary School</h2>
+                    <div class="date"><img src="img/locationn.png" alt="">At Masha,Ethiopia</div>
+                    <p>Attended my Elementary School at Masha Primary School</p>
+        </section>
+
+    <section class="value hidden animated">
+             <div class="date"><img src="img/calendarr.png" alt="">2010-2013</div><br>
+             <h2>HighSchool and Preparatory</h2>
+             <div class="date"><img src="img/locationn.png" alt="">At Masha,Ethiopia</div>
+             <p>Attended Both my secondary and Preparatory School at masha Secondary and Preparatory School</p>
+    </section>
+
+    <section class="value hidden1 animated">
+        <div class="date"><img src="img/calendarr.png" alt="">2013-....</div><br>
+        <h2>Unversity</h2>
+        <div class="date"><img src="img/locationn.png" alt="">At Adama,Ethiopia</div>
+        <p>I am currently enrolled in a Software Engineering program at Adama Science and Technology University.</p>
+    </section>
+   
+    <section id="education" class="text"> Top-Expertise</section>
+        <p id="inform">I am a front end web developer and a Compitative Programmer with a basic knowlwdge of Python,C++ and Java with primary focus on:</p>
+    </div>
+    <section class="table animated hidden">
+        <table>
+            <tr>
+                <td><img src="img/5968292.png" alt=""></td>
+                <td>Java Script</td>      
+            </tr>
+            <tr>
+                <td  colspan="2" ><div class="outer"><div class="inner"><p id="p1">0%</p></div></div></td>
+            </tr>
+            
+           
+            <tr>
+                <td><img src="img/732212.png" alt="" ></td>
+                <td>Html</td>
+            </tr>
+            <tr>
+                <td  colspan="2"><div class="outer1"><div class="inner1"><p id="p2">0%</p></div></div></td>
+            </tr>
+            <tr>
+                <td><img src="img/4672509.png" alt=""></td>
+                <td>Css</td>
+               
+            </tr>
+            <tr>
+                <td  colspan="2"><div class="outer2"><div class="inner2"><p id="p3">0%</p></div></div></td>
+            </tr>
+            <tr>
+                <td><img src="img/p.png" alt=""></td>
+                <td>Python</td>
+               
+            </tr>
+            <tr>
+                <td  colspan="2"><div class="outer3"><div class="inner3" ><p id="p4">0%</p></div></div></td>
+            </tr>
+        </table>
+    </section>
+    <div class="Project"> 
+       <p id="latest" class="text">Some of my Latest Projects and Achievements</p>   
+       <div class="show">
+          <section class="box hidden animated">
+                <img src="img/Screenshot (22).png" alt="">
+                <p>I scored more than <b>285</b> points on kattice</p>
+                <p>(which is a famous open compititive programing site)</p>
+          </section>
+        <section class="box hidden1 animated">
+            <img src="img/Screenshot (26).png" alt="">
+            <p>"I have created a calculator site that performs basic math Oprations.</p>
+            <p>Here is the <a href="https://eyoaab.github.io/Calculator">link</a> to the site</p>
+    </section>
+     <section class="box hidden animated">
+        <img src="img/Screenshot (28).png" alt="">
+        <p>I have created a 6-page responsive website about a car company.</p>
+        <p>Here is the <a href=" https://eyoaab.github.io/Responsive1/">link</a> to the site</p>
+  </section>
+     
+
+       </div>
+    </div>
+    <div class="Contact" id="contact">
+        <img src="img/photo_2023-06-09_15-50-05.jpg" alt="" id="photo">
+    <h2>Eyob Tariku</h2>  
+    <p>Get in touch via </p>
+    <div class="social">
+        <a href="https://t.me/eyoaab" target="_blank" class="link"><img src="img/telegram.png" alt=""></a>
+        <a href="https://eyobtariku48@gmail.com" target="_blank" class="link"><img src="img/tt.jpg" alt="" ></a>
+        <a href="https://github.com/eyoaab" target="_blank" class="link"><img src="img/github.png" alt="" ></a>
+        <a href="#home" class="link"><img src="img/ll.webp" alt="" ></a>
+    </div>
+
+</div>
+<div class="sticky"><a href="#home"><img src="img/up icon.png" alt=""></a></div>
+</body>
+<footer>
+    <p>&copy; 2023 Developed_by <a href="https://t.me/eyoaab">Eyob Tariku</a></p>
+</footer>
+
+</html>
